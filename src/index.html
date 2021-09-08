@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Earth Vacation!</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Welcome to the Interplanetary Vacation Guide</h1>
+    <h3>Get Weather Conditions From Anywhere On Earth!</h3>
+    <label for="location">Enter a location:</label>
+    <input id="location" type="text">
+    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <div class="showErrors"></div>
+    <div class="showHumidity"></div>
+    <div class="showTemp"></div>
+    <div id="earthEvents">
+      <label for="category">Select the type of event you want to see</label>
+      <select name="category" id="categories">
+        <option value="6">Drought</option>
+        <option value="7">Dust and Haze</option>
+        <option value="8">Wildfire</option>
+        <option value="9">Floods</option>
+        <option value="10">Severe Storms</option>
+        <option value="12">Volcanoes</option>
+        <option value="13">Water Color</option>
+        <option value="14">Landslides</option>
+        <option value="15">Sea and Lake Ice</option>
+        <option value="16">Earthquakes</option>
+        <option value="17">Snow</option>
+        <option value="18">Extreme Temperatures</option>
+        <option value="19">Man-Made</option>
+      </select>
+      <button type='button' id="categoryButton">Click here!</button>
+      <div class="row">
+        <div class="events col-2" id="event1"></div>
+        <div class="events col-2" id="event2"></div>
+        <div class="events col-2" id="event3"></div>
+        <div class="events col-2" id="event4"></div>
+        <div class="events col-2" id="event5"></div>
+      </div>
+      <button type="button" id="recEvents">Click here to see our recommended events!</button>
+      <div class="row">
+        <div class="events col-2" id="random1"></div>
+        <div class="events col-2" id="random2"></div>
+        <div class="events col-2" id="random3"></div>
+        <div class="events col-2" id="random4"></div>
+        <div class="events col-2" id="random5"></div>
+      </div>
+      <div class=container id="mapContainer"></div>
+    </div>
+
+    <div class="container" id="imageSetupTesting">
+      <label for="searchTerm">Event Search Term [will not be a user-input later]</label>
+      <input id="searchTerm" type="text">
+      <button class="btn-info" id="getImg">Get Image</button>
+      <div class="tripImg"></div>
+    </div>
+    <div id='placeholder'></div>
+  </div>
 </body>
 </html>
+
+<!-- 45.51761448618247, -122.68523500253937 -->

@@ -3,20 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <title>Earth Vacation!</title>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to the Interplanetary Vacation Guide</h1>
-    <!-- <h3>Get Weather Conditions From Anywhere On Earth!</h3>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
-    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button> -->
-    <div class="showErrors"></div>
-    <div class="showHumidity"></div>
-    <div class="showTemp"></div>
+    <div id="header">
+      <h1>Interplanetary Vacations</h1>
+      <h4>Book your Trip & Go Today</h4>
+    </div>
+    <div id="destinationView" class="card">
+      <div id="weatherFacts">
+        <div class="showErrors"></div>
+        <div class="showHumidity"></div>
+        <div class="showTemp"></div>
+      </div>
+      <div id='placeholder'></div>
+    </div>
+    <div id="endScreenHide">
     <div id="earthEvents">
-      <label for="category">Select the type of event you want to see</label>
+      <label for="category">Select your Experience:</label>
       <select name="category" id="categories">
         <option value="6">Drought</option>
         <option value="7">Dust and Haze</option>
@@ -32,63 +43,83 @@
         <option value="18">Extreme Temperatures</option>
         <option value="19">Man-Made</option>
       </select>
-      <button type='button' id="categoryButton">Click here!</button>
-      <div class="row">
-        <div class="events col-2">
-          <div id="event1"></div>
-          <button class="btn-info" id="catBut1">See Location</button>
-        </div>
-        <div class="events col-2">
-          <div id="event2"></div>
-          <button class="btn-info" id="catBut2">See Location</button>
-        </div>
-        <div class="events col-2">
-          <div id="event3"></div>
-          <button class="btn-info" id="catBut3">See Location</button>
-        </div>
-        <div class="events col-2">
-          <div id="event4"></div>
-          <button class="btn-info" id="catBut4">See Location</button>
-        </div>
-        <div class="events col-2">
-          <div id="event5"></div>
-          <button class="btn-info" id="catBut5">See Location</button>
+      <button type='button' id="categoryButton">Go</button>
+      <div class="center-align">
+        <div class="row">
+          <div class ="events1 col-4">
+            <div id="event1"></div>
+            <button class="btn-info cat" id="catBut1">See Location</button>
+            <button class="btn-dark cat" id="catButGo1">Book Now</button>
+          </div>
+          <div class ="events1 col-4">
+            <div id="event2"></div>
+            <button class="btn-info cat" id="catBut2">See Location</button>
+            <button class="btn-dark cat" id="catButGo2">Book Now</button>
+          </div>
+          <div class ="events1 col-4">
+            <div id="event3"></div>
+            <button class="btn-info cat" id="catBut3">See Location</button>
+            <button class="btn-dark cat" id="catButGo3">Book Now</button>
+          </div>
+          <div class ="events1 col-4">
+            <div id="event4"></div>
+            <button class="btn-info cat" id="catBut4">See Location</button>
+            <button class="btn-dark cat" id="catButGo4">Book Now</button>
+          </div>
+          <div class ="events1 col-4">
+            <div id="event5"></div>
+            <button class="btn-info cat" id="catBut5">See Location</button>
+            <button class="btn-dark cat" id="catButGo5">Book Now</button>
+          </div>
         </div>
       </div>
-      <button type="button" id="recEvents">Click here to see our recommended events!</button>
+      <button type="button" id="recEvents" class="orangeBtn">Recommended Experiences</button>
       <div class="row">
-        <div class="events col-2">
+        <div class ="events2 col-4">
           <div id="random1"></div>
-          <button class="btn-info" id="randoBut1">See Location</button>
+          <button class="btn-info rando" id="randoBut1">See Location</button>
+          <button class="btn-dark rando" id="randoButGo1">Book Now!</button>
         </div>
-        <div class="events col-2">
+        <div class ="events2 col-4">
           <div id="random2"></div>
-          <button class="btn-info" id="randoBut2">See Location</button>
+          <button class="btn-info rando" id="randoBut2">See Location</button>
+          <button class="btn-dark rando" id="randoButGo2">Book Now!</button>
         </div>
-        <div class="events col-2">
+        <div class ="events2 col-4">
           <div id="random3"></div>
-          <button class="btn-info" id="randoBut3">See Location</button>
+          <button class="btn-info rando" id="randoBut3">See Location</button>
+          <button class="btn-dark rando" id="randoButGo3">Book Now!</button>
         </div>
-        <div class="events col-2">
+        <div class ="events2 col-4">
           <div id="random4"></div>
-          <button class="btn-info" id="randoBut4">See Location</button>
+          <button class="btn-info rando" id="randoBut4">See Location</button>
+          <button class="btn-dark rando" id="randoButGo4">Book Now!</button>
         </div>
-        <div class="events col-2">
+        <div class ="events2 col-4">
           <div id="random5"></div>
-          <button class="btn-info" id="randoBut5">See Location</button>
+          <button class="btn-info rando" id="randoBut5">See Location</button>
+          <button class="btn-dark rando" id="randoButGo5">Book Now!</button>
         </div>
       </div>
       <div class=container id="mapContainer"></div>
     </div>
-
-    <div class="container" id="imageSetupTesting">
-      <label for="searchTerm">Event Search Term [will not be a user-input later]</label>
-      <input id="searchTerm" type="text">
-      <button class="btn-info" id="getImg">Get Image</button>
-      <div class="tripImg"></div>
-      <div class="tripFace"></div>
     </div>
-    <div id='placeholder'></div>
+    <div class="container" id="imageSetupTesting">
+      <!-- <label for="searchTerm">Event Search Term [will not be a user-input later]</label>
+      <input id="searchTerm" type="text">
+      <button class="btn-info" id="getImg">Get Image</button> -->
+      <div class="card" id="passport">
+        <h2 class="card-title">Here Is Your Travel Passport</h2>
+        <div class="tripImg col-6">
+        </div>
+        <div class="tripFace col-6"></div>
+        <div class="card-body">
+          <h2 id="view">View from the ground</h2>
+          <h2 id="tag">Your Earth Name: <br /><span id="earthName"class="passportName"></span></h2>
+        </div>
+      </div>
+      <button id="again" class="orangeBtn">Book Another Trip</button>
+    </div>
   </div>
 </body>
 </html>

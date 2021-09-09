@@ -1,6 +1,203 @@
-.btn-info {
-  margin-bottom: 8px;
+h1 {
+  font-family: 'Monoton', cursive;
+  padding:2% 0 0 0;
+  color:rosybrown;
+  font-size:50pt;
+  /* lightslategray, midnightblue, rebeccapurple, rosybrown, slategray */
 }
+
+h2 {
+  font-weight: 900;
+  text-align: center;
+  color:rgb(66, 46, 46);
+  line-height:3em;
+}
+
+h4 {
+  padding: 0 0 5% 0;
+  color:rosybrown;
+}
+
+body{
+  text-align: center;
+  background-image: url(../../assets/img/earth_background.jpeg);
+  background-color: rgb(247, 223, 193);
+  background-blend-mode: screen;
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.row {
+  padding: 2% 0 0 0;
+}
+
+#destinationView {
+  display:none;
+  margin: auto;
+  margin-bottom:3%;
+  padding: 10px;
+  width:50%;
+  background-color: rgb(241, 226, 212);
+  color: rgb(105, 78, 78);
+  border: rgba(207, 116, 74, 0.781) 2px solid;
+  box-shadow: palevioletred 4px 4px 10px 4px;
+  transition: 0.3s ease-in-out;
+}
+
+#weatherFacts, #placeholder {
+  padding: 1% 0 1% 0;
+}
+
+#categoryButton {
+  background-color: rgb(241, 226, 212);
+  color: rosybrown;
+  border: rgba(207, 116, 74, 0.781) 2px solid;
+  transition: 0.3s ease-in-out;
+ }
+ #categoryButton:hover {
+   box-shadow: palevioletred 4px 4px 10px 4px;
+ }
+
+.orangeBtn {
+ width: 70%;
+ height: 50px;
+ background-color: rgb(241, 226, 212);
+ color: rgb(151, 111, 111);
+ border: rgba(207, 116, 74, 0.781) 2px solid;
+ transition: 0.3s ease-in-out;
+}
+.orangeBtn:hover {
+  box-shadow: palevioletred 4px 4px 10px 4px;
+}
+#earthName {
+  float: right;
+}
+/* #tag {
+  
+
+} */
+#view {
+  float: left;
+  margin-bottom: 125px;
+}
+.cat, .rando {
+  margin-bottom: 8px;
+  display: none;
+}
+.btn-info {
+  margin-top:10px;
+  background-color: rgb(165, 94, 73);
+  color: rgb(255, 255, 255);
+  border: rgba(207, 116, 74, 0.781) 2px solid;
+  transition: 0.3s ease-in-out;
+}
+.btn-info:hover {
+  box-shadow: palevioletred 4px 4px 10px 4px;
+  background-color: papayawhip;
+  color: rgb(95, 62, 41);
+}
+.btn-info:focus {
+  background-color: papayawhip;
+  color: rgb(95, 62, 41);
+  border-color: rgba(139, 75, 75, 0.644);
+}
+.btn-dark {
+  transition: 0.3s ease-in-out;
+}
+.btn-dark:hover {
+  box-shadow: palevioletred 4px 4px 10px 4px;
+  background-color: papayawhip;
+  color: rgb(95, 62, 41);
+}
+
 #recEvents {
   margin-bottom: 8px;
+}
+
+.tripImg {
+  float:left;
+}
+.tripFace {
+  float:left;
+}
+
+#passport {
+  display:none;
+  background-image:url("../../assets/img/tab.jpg");
+  background-size:cover;
+  overflow: hidden;
+  background-color:rosybrown;
+  background-blend-mode:soft-light;
+
+
+}
+
+#passport  img {
+  box-shadow:
+  0 1.6px 1.2px rgba(0, 0, 0, 0.063),
+  0 3.4px 2.7px rgba(0, 0, 0, 0.093),
+  0 5.8px 4.6px rgba(0, 0, 0, 0.115),
+  0 8.7px 6.9px rgba(0, 0, 0, 0.133),
+  0 12.5px 10px rgba(0, 0, 0, 0.15),
+  0 17.7px 14.2px rgba(0, 0, 0, 0.167),
+  0 25.1px 20.1px rgba(0, 0, 0, 0.185),
+  0 36.5px 29.2px rgba(0, 0, 0, 0.207),
+  0 56.3px 45px rgba(0, 0, 0, 0.237),
+  0 100px 80px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+
+  padding:20px 10px;
+  margin: auto;
+  margin-left: 7.5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow:
+  0 1.6px 1.2px rgba(0, 0, 0, 0.063),
+  0 3.4px 2.7px rgba(0, 0, 0, 0.093),
+  0 5.8px 4.6px rgba(0, 0, 0, 0.115),
+  0 8.7px 6.9px rgba(0, 0, 0, 0.133),
+  0 12.5px 10px rgba(0, 0, 0, 0.15),
+  0 17.7px 14.2px rgba(0, 0, 0, 0.167),
+  0 25.1px 20.1px rgba(0, 0, 0, 0.185),
+  0 36.5px 29.2px rgba(0, 0, 0, 0.207),
+  0 56.3px 45px rgba(0, 0, 0, 0.237),
+  0 100px 80px rgba(0, 0, 0, 0.3);
+}
+.events1, .events2 {
+  display:none;
+  height:150px;
+  width:200px;
+  padding:20px 10px;
+  margin-left: 7.5%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(241, 226, 212);
+  color: rgb(105, 78, 78);
+  border: rgba(207, 116, 74, 0.781) 2px solid;
+  box-shadow: palevioletred 4px 4px 10px 4px;
+  transition: 0.3s ease-in-out;
+}
+.events1:hover, .events2:hover {
+  box-shadow:
+  0 1.6px 1.2px rgba(253, 128, 10, 0.063),
+  0 3.4px 2.7px rgba(0, 0, 0, 0.093),
+  0 5.8px 4.6px rgba(0, 0, 0, 0.115),
+  0 8.7px 6.9px rgba(0, 0, 0, 0.133),
+  0 12.5px 10px rgba(241, 117, 0, 0.15),
+  0 17.7px 14.2px rgba(247, 0, 0, 0.167),
+  0 25.1px 20.1px rgba(0, 0, 0, 0.185),
+  0 36.5px 29.2px rgba(209, 68, 3, 0.207),
+  0 30px 40px rgba(255, 103, 1, 0.301);
+}
+
+#again {
+  display:none;
+}
+
+#imageSetupTesting {
+  margin: 0 0 5% 0;
 }

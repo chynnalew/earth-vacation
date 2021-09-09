@@ -31,6 +31,21 @@
 ## Contact Information
 
 ## General Idea:
+
+
+STUFF FOR THURSDAY:
+* Return message when user selects event that is not currently happening
+* link event coord with map coord
+* link catagories with image search
+* style the hell out this 
+* link weather to coord.
+* add random person generator 
+
+
+
+
+
+///
 * Same Day Martian vacation service: visit earth
 * Natural disasters/weather as tourist attractions
 * Return Trip Passport/Manifest: show your human avatar, your destination, etc.

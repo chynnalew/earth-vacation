@@ -16,6 +16,14 @@ export class EarthCategory {
   }
 }
 
+export function getCoords(response) {
+  let coordArray = [];
+  for(let i=0; i<response.events.length; i++) {
+    coordArray.push(response.events[i].geometries[0].coordinates);
+  }
+  return coordArray;
+}
+
 export class EarthRandom {  
   static getEvent() {
     return new Promise(function(resolve, reject) {
@@ -32,7 +40,12 @@ export class EarthRandom {
       request.send();
     });
   }
+  
 }
+
+
+
+// cause then we could theoretically grab a particular array Element, string it and reverse it [like missy eliot] and then give it a name and put it template literal into our other thing?
 
 // 1. Call EONET API to find available "attractions"
 //       Category:

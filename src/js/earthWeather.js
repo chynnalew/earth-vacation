@@ -1,8 +1,8 @@
 export default class WeatherService {  
-  static getWeather(city) {
+  static getWeather(lat, lon) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.EARTH_API_KEY}`;
+      const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${process.env.EARTH_API_KEY}`;
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);

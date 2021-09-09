@@ -8,10 +8,10 @@
 <body>
   <div class="container">
     <h1>Welcome to the Interplanetary Vacation Guide</h1>
-    <h3>Get Weather Conditions From Anywhere On Earth!</h3>
+    <!-- <h3>Get Weather Conditions From Anywhere On Earth!</h3>
     <label for="location">Enter a location:</label>
     <input id="location" type="text">
-    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button> -->
     <div class="showErrors"></div>
     <div class="showHumidity"></div>
     <div class="showTemp"></div>
@@ -34,19 +34,49 @@
       </select>
       <button type='button' id="categoryButton">Click here!</button>
       <div class="row">
-        <div class="events col-2" id="event1"></div>
-        <div class="events col-2" id="event2"></div>
-        <div class="events col-2" id="event3"></div>
-        <div class="events col-2" id="event4"></div>
-        <div class="events col-2" id="event5"></div>
+        <div class="events col-2">
+          <div id="event1"></div>
+          <button class="btn-info" id="catBut1">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="event2"></div>
+          <button class="btn-info" id="catBut2">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="event3"></div>
+          <button class="btn-info" id="catBut3">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="event4"></div>
+          <button class="btn-info" id="catBut4">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="event5"></div>
+          <button class="btn-info" id="catBut5">See Location</button>
+        </div>
       </div>
       <button type="button" id="recEvents">Click here to see our recommended events!</button>
       <div class="row">
-        <div class="events col-2" id="random1"></div>
-        <div class="events col-2" id="random2"></div>
-        <div class="events col-2" id="random3"></div>
-        <div class="events col-2" id="random4"></div>
-        <div class="events col-2" id="random5"></div>
+        <div class="events col-2">
+          <div id="random1"></div>
+          <button class="btn-info" id="randoBut1">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="random2"></div>
+          <button class="btn-info" id="randoBut2">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="random3"></div>
+          <button class="btn-info" id="randoBut3">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="random4"></div>
+          <button class="btn-info" id="randoBut4">See Location</button>
+        </div>
+        <div class="events col-2">
+          <div id="random5"></div>
+          <button class="btn-info" id="randoBut5">See Location</button>
+        </div>
       </div>
       <div class=container id="mapContainer"></div>
     </div>
@@ -56,6 +86,7 @@
       <input id="searchTerm" type="text">
       <button class="btn-info" id="getImg">Get Image</button>
       <div class="tripImg"></div>
+      <div class="tripFace"></div>
     </div>
     <div id='placeholder'></div>
   </div>
